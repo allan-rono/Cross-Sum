@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/jpg" href="./Images/cross_sum_image.png" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>Cross Sum</title>
 </head>
+
 <body>
-    <header><h1>Cross Sum</h1></header>
-    <main>
-        <input id="num">
-        <button id="submit">Get Cross Sum</button>
-        <br>
-        <p id="answer"></p>
-    </main>
+    <div class="header">
+        <div class="container">
+            <div class="row justify-content-md-centre">
+                <div class="col">
+                    <h1 class="p-3 mb-2 bg-white text-dark">
+                        <img src="./Images/cross_sum_image.png" width="60" height="60">Cross Sum
+                    </h1>
+                    <span class="badge rounded-pill bg-primary">Newbie</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="display-6">What is a Cross Sum?</p>
+                    <p>- A cross sum is the sum of all single numbers. For example the cross sum of 12 is 1+2=3
+                        <hr>
+                        <img src="./Images/code_snippet.png">
+                        </div>
+                <div class="col">
+                    <p class="p-3 mb-2 bg-dark text-white">Insert whole Number:</p>
+                    <hr>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">Number</span>
+                        <input id="num" type="text" class="form-control" placeholder="Insert Whole Number"
+                            aria-label="Number" aria-describedby="addon-wrapping">
+                    </div>
+                    <br>
+                    <button id="submit" class="btn btn-success">Get Cross Sum</button>
+                    <br>
+                    <p class="display-5" id="answer"></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="./script.js"></script>
 </body>
+
 </html>

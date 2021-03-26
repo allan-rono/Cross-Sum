@@ -15,3 +15,4 @@ function getCrossSum() {
 }
 
 submit.addEventListener("click", getCrossSum);
+
